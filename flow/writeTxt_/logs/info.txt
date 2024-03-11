@@ -1,5 +1,5 @@
 src_lang: mar_Deva tgt_lang: eng_Latn ai4bharat/indictrans2-indic-en-dist-200M
-198
+200
   exec_task: pdf_cid_info 
   exec_task: pdf_cid_reader 
 NotFound sakalmarathi 53
@@ -18,4 +18,43 @@ NotFound sakalmarathi 54
   exec_task: line_finder 
   exec_task: para_finder 
 **** PIPEERROR IN 202402061712545229.pdf --> para 202402061712545229.pdf:Page_idx: 1 1 <-> [(0, 2), (0, 3)]
-#docs: 198 #processed: 1
+  exec_task: pdf_cid_info 
+  exec_task: pdf_cid_reader 
+	202403111242012929.pdf missing_cmaps: calibribold, sakalmarathinormal
+  exec_task: word_recognizer 
+	Tesseract on page: 0
+	Tesseract on page: 1
+  exec_task: pdftable_finder 
+	==Total:0 Errors=0 
+  exec_task: line_finder 
+  exec_task: para_finder 
+  exec_task: extract_order_number 
+	extract_order_number:202403111242012929.pdf: >शासन निर्णय क्रमांक< >निमत्ता-०५१९/८४८/प्र.क्र.८०/विशा-१ अ<
+	elapsed_time:202403111242012929.pdf: 0.000121
+  exec_task: doc_translator_hf 
+    Paras: #21 Sentences: #0
+	[0]  #words: 282 #sentences: 27
+	After generate: 4 MB
+	[1]  #words: 96 #sentences: 2
+	After generate: 4 MB
+  exec_task: text_writer 
+  exec_task: pdf_cid_info 
+  exec_task: pdf_cid_reader 
+	202403111634414129.pdf missing_cmaps: calibribold, sakalmarathinormal
+  exec_task: word_recognizer 
+	Tesseract on page: 0
+	Tesseract on page: 1
+  exec_task: pdftable_finder 
+	==Total:0 Errors=0 
+  exec_task: line_finder 
+  exec_task: para_finder 
+  exec_task: extract_order_number 
+	**FirstPage: 8: संकीर्ण-०३२४/प्र.क्र.३९/विशा १-अ ==शासन निर्णय क्रमांक : संकीर्ण-०३२४/प्र.क्र.३९/विशा १-अ
+	extract_order_number:202403111634414129.pdf: >शासन निर्णय क्रमांक< >संकीर्ण-०३२४/प्र.क्र.३९/विशा १-अ<
+	elapsed_time:202403111634414129.pdf: 0.000950
+  exec_task: doc_translator_hf 
+    Paras: #21 Sentences: #0
+	[0]  #words: 250 #sentences: 27
+	After generate: 4 MB
+  exec_task: text_writer 
+#docs: 200 #processed: 3
